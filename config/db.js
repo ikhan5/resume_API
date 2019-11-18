@@ -4,7 +4,7 @@ const db = config.get("mongoURI");
 
 const connectDB = () => {
   mongoose
-    .connect(process.env.MONGOHQ_URL ||db , {
+    .connect(process.env.MONGODB_URI ||db , {
       useNewUrlParser: true,
       useCreateIndex: true,
       useFindAndModify: false,
