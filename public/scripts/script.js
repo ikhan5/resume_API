@@ -5,7 +5,7 @@ window.onload = () => {
   login = () => {
     $.ajax({
       method: "POST",
-      url: "/api/auth",
+      url: "/api/auth/",
       dataType: "json",
       contentType: "application/json; charset=utf-8",
       data: JSON.stringify({ email: email.value, password: password.value }),
@@ -13,7 +13,7 @@ window.onload = () => {
         $("#errors").hide();
         $.ajax({
           method: "GET",
-          url: "/api/resume",
+          url: "/api/resume/",
           headers: { "x-auth-token": data.token },
           dataType: "json",
           contentType: "application/json; charset=utf-8",
