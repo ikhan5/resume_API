@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Imzan Resume API</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Resume API - Imzan Khan</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+        aria-controls="navbarCollapse"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="container">
+      <div class="row">
+        <div class="form-signin mt-5 col-md-4 col-sm-12">
+          <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+          <p id="errors" class="text-danger mb-2" style="display: none;"
+            >Invalid Credentials</p
+          >
+          <label for="inputEmail" class="sr-only">Email address</label>
+          <input
+            type="email"
+            id="inputEmail"
+            class="form-control"
+            placeholder="Email address"
+            required
+            autofocus
+          />
+          <label for="inputPassword" class="sr-only">Password</label>
+          <input
+            type="password"
+            id="inputPassword"
+            class="form-control"
+            placeholder="Password"
+            required
+          />
+          <button
+            class="btn btn-lg btn-primary btn-block mt-3"
+            type="submit"
+            onclick="login()"
+          >
+            Sign in
+          </button>
+
+          <p class="mt-2">Test Credentials for API</p>
+          <ul>
+            <li>Email: test@testuser.ca</li>
+            <li>Password: testing123</li>
+          </ul>
+        </div>
+        <pre class="resume-details mt-5 col-md-8 col-sm-12"></pre>
+      </div>
+    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

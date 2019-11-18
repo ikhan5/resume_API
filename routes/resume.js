@@ -1,12 +1,15 @@
 const express = require("express");
 const router = express.Router();
+const auth = require("../middleware/auth");
 
 // @route   GET api/resume
 // @desc    Get Imzan Khan's resume
 // @access  Private
-router.get("/", (req, res) => {
+router.get("/", auth, (req, res) => {
   res.json({
-    msg: "This is a few things about Imzan Khan",
+    msg: "I created this API using Node.js, Express, and MongoDB.",
+    repo: "https://github.com/ikhan5/resume_API",
+    email: 'contact@imzankhan.ca',
     education: [
       {
         school: "Humber College",
