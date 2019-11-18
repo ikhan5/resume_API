@@ -8,7 +8,8 @@ const connectDB = () => {
       useNewUrlParser: true,
       useCreateIndex: true,
       useFindAndModify: false,
-      // useUnifiedTopology: true
+      useUnifiedTopology: true,
+      socketTimeoutMS: 300000 
     })
     .then(() => {
       console.log("MongoDB Connected");
