@@ -1,7 +1,7 @@
 const express = require("express"); //common js
 const connectDB = require("./config/db");
 const app = express();
-const path = require("path");
+const path = require('path');
 
 connectDB();
 app.use(express.json({ extended: false }));
@@ -20,7 +20,6 @@ app.use("/api/users", require("./routes/users"));
 app.use("/api/auth", require("./routes/auth"));
 app.use("/api/resume", require("./routes/resume"));
 
-var server = app.listen(process.env.PORT || 5000, function() {
-  var port = server.address().port;
-  console.log("Express is working on port " + port);
-});
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
