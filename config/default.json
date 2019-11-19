@@ -1,4 +1,0 @@
-{
-    "mongoURI": "mongodb+srv://ikhan:Q9a5mv9eQ9HpPj2@cluster0-flzc6.mongodb.net/test?retryWrites=true&w=majority",
-    "jwtSecret": "jwiUEyMD4XNI31V7ChaskmwcHoXmoRE9FuDbPSDs8xZRjwTM1S9QbPKn1izQV-FTTi"
-}
